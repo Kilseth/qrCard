@@ -6,20 +6,67 @@
   font-weight: 400, 700;
 }
 
-/**/
+/*Universal*/
 * {
   margin: 0;
   padding: 0;
 }
 
+/*Body*/
 body {
+  display: flex;
   font-size: 15px;
+  background: hsl(212, 45%, 89%);
 }
 
+/*Container*/
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: hsl(0, 0%, 100%);
+  padding: 1em;
+  width: 14em;
+  height: 26em;
+  border-radius: 1em;
+  margin: 0;
+  padding: 0 1em;
+}
+
+/*QR-Code*/
+.qrCode {
+  scale: 37%;
+  padding: 0;
+}
+
+/*Text*/
+.cardTitle {
+  color: hsl(218, 44%, 22%);
+  font-weight: 700;
+}
+
+.ptext {
+  color: hsl(220, 15%, 55%);
+  font-weight: 400;
+}
+
+/*Attribution*/
 .attribution {
   font-size: 11px;
-  text-align: center;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 375px) {
+}
+
+@media (min-width: 1440px) {
+  /*Attribution*/
+  .attribution {
+    justify-content: center;
+    align-items: end;
+    text-align: center;
+  }
 }
