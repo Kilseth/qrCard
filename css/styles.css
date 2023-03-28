@@ -14,8 +14,10 @@
 /*Body*/
 body {
   display: flex;
-  font-size: 15px;
   background: #d6e2f0;
+  font-family: Outfit, Arial, Helvetica, sans-serif;
+  justify-content: center;
+  align-items: center;
 }
 
 /*Container*/
@@ -27,31 +29,36 @@ body {
   background: #ffffff;
   padding: 2em;
   width: 16em;
-  height: 24em;
+  height: 28em;
   border-radius: 1em;
-  margin: 0;
-  padding: 0 1em;
+  margin: 3em;
+  padding: 0.5em 1em 2em 1em;
 }
 
 /*QR-Code Image*/
 .container img {
   width: 100%;
   border-radius: 0.5em;
-  margin-bottom: 0em;
+  padding-bottom: -1em;
 }
 
 /*Text*/
+.text-container {
+  text-align: center;
+  margin: 1em;
+}
+
 .cardTitle {
   color: #1f3251;
   font-weight: 700;
-  margin-bottom: -4em;
-  text-align: center;
+
+  font-size: 18px;
 }
 
 .ptext {
   color: #7b879d;
   font-weight: 400;
-  text-align: center;
+  font-size: 14px;
 }
 
 /*Attribution*/
@@ -62,15 +69,10 @@ body {
   color: hsl(228, 45%, 44%);
 }
 
+/*
 @media (min-width: 375px) {
 }
 
 @media (min-width: 1440px) {
-  /*Attribution*/
-  .attribution {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    text-align: center;
-  }
 }
+*/
