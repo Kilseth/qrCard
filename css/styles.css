@@ -1,5 +1,4 @@
 /* Font*/
-
 @font-face {
   font-family: Outfit;
   src: url(https://fonts.google.com/specimen/Outfit);
@@ -16,39 +15,43 @@
 body {
   display: flex;
   font-size: 15px;
-  background: hsl(212, 45%, 89%);
+  background: #d6e2f0;
 }
 
 /*Container*/
 .container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  background: hsl(0, 0%, 100%);
-  padding: 1em;
-  width: 14em;
-  height: 26em;
+  background: #ffffff;
+  padding: 2em;
+  width: 16em;
+  height: 24em;
   border-radius: 1em;
   margin: 0;
   padding: 0 1em;
 }
 
-/*QR-Code*/
-.qrCode {
-  scale: 37%;
-  padding: 0;
+/*QR-Code Image*/
+.container img {
+  width: 100%;
+  border-radius: 0.5em;
+  margin-bottom: 0em;
 }
 
 /*Text*/
 .cardTitle {
-  color: hsl(218, 44%, 22%);
+  color: #1f3251;
   font-weight: 700;
+  margin-bottom: -4em;
+  text-align: center;
 }
 
 .ptext {
-  color: hsl(220, 15%, 55%);
+  color: #7b879d;
   font-weight: 400;
+  text-align: center;
 }
 
 /*Attribution*/
@@ -65,8 +68,9 @@ body {
 @media (min-width: 1440px) {
   /*Attribution*/
   .attribution {
+    display: flex;
     justify-content: center;
-    align-items: end;
+    align-items: flex-end;
     text-align: center;
   }
 }
