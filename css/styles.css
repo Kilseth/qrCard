@@ -31,7 +31,7 @@ body {
   width: 16em;
   height: 28em;
   border-radius: 1em;
-  margin: 5em;
+  margin: 10em 5em;
   padding: 0.3em 1em 1em 1em;
 }
 
@@ -73,10 +73,28 @@ body {
   line-height: 2.5em;
 }
 
-/*
 @media (min-width: 375px) {
+  body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  /*Container*/
+  .container {
+    margin: 2em 2em 2em 2em;
+  }
 }
 
 @media (min-width: 1440px) {
+  body {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+  }
+  /*Container*/
+  .container {
+    margin: 10em 2em 2em 2em;
+  }
 }
-*/
